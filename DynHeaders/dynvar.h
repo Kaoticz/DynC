@@ -83,4 +83,4 @@ extern struct DynamicVariable DynvarNewDouble (struct DynamicVariable*, double);
 extern struct DynamicVariable DynvarNewLDouble (struct DynamicVariable*, long double);
 extern struct DynamicVariable DynvarNewString (struct DynamicVariable*, char*);
 
-#endif // _DYN_VAR
+#endif // DYNVAR_H

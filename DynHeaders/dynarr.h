@@ -85,4 +85,4 @@ extern void DynarrSortCustom (struct DynamicArray*, int (*)(const void*, const v
 extern struct DynamicArray DynarrGetSubarray (struct DynamicArray*, int, int);
 extern struct DynamicArray DynarrGetSubarrayCustom (struct DynamicArray*, int (*)(const void*));
 
-#endif // _DYN_ARR
+#endif // DYNARR_H

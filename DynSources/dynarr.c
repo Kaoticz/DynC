@@ -69,7 +69,7 @@ unsigned short DynarrAdd (struct DynamicArray* sarray, void* newElement)
     // If count is going to exceed the capacity, expand the capacity
     if (sarray->Count > sarray->Capacity)
     {
-        sarray->Capacity <<= 1; // Multiply capacity by 2
+        sarray->Capacity *= 2; // Multiply capacity by 2
         tempPointer = realloc(sarray->Array, sarray->Capacity * sarray->TypeSize);
 
         if (tempPointer)
@@ -196,9 +196,7 @@ void DynarrJoin (struct DynamicArray* source, struct DynamicArray* target)
     if (source->Type != target->Type || source->Count == 0)
         return;
 
-    int counter;
-
-    for (counter = 0; counter < source->Count; counter++)
+    for (int counter = 0; counter < source->Count; counter++)
         DynarrAdd(target, source->Array + (source->TypeSize * counter));
 }
 
@@ -539,9 +537,6 @@ void DynarrSetElement(struct DynamicArray* sarray, void* element, int index)
 void DynarrPrint (struct DynamicArray* sarray, char* delimiter)
 {
     int counter;
-    //char* buffer = NULL;
-    //size_t bufferSize = 0;
-    //FILE* myStream = open_memstream(&buffer, &bufferSize);
 
     switch (sarray->Type)
     {
@@ -558,7 +553,6 @@ void DynarrPrint (struct DynamicArray* sarray, char* delimiter)
         case Int:
             for (counter = 0; counter < sarray->Count; counter++)
                 printf("%d%s", ((int*)sarray->Array)[counter], delimiter);
-                //fprintf(myStream, "%d%s", ((int*)sarray->Array)[counter], delimiter);
             break;
 
         case Long:
@@ -632,12 +626,6 @@ void DynarrPrint (struct DynamicArray* sarray, char* delimiter)
             fprintf(stderr, "Error: attempted to print an unsupported data type or the array is null.\n");
             break;
     }
-
-
-    //fclose(myStream);
-    //printf("%.*s", (int)(bufferSize - strlen(delimiter)), buffer);
-    //free(buffer);
-
 }
 
 

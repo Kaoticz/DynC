@@ -110,4 +110,4 @@ extern void DynlstSet (struct DynlstHeader*, void*, int, enum DataType);
 extern int DynlstIndexOf (struct DynlstHeader*, void*, int);
 extern struct __DynlstElem* DynlstGet (struct DynlstHeader*, int);
 
-#endif // _DYN_LST
+#endif // DYNLST_H

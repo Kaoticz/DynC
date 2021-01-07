@@ -8,5 +8,3 @@ int main()
     printf("Write your program here.\n");
     return 0;
 }
-
-
