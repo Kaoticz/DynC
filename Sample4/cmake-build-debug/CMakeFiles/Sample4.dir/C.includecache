@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Matheus/CLionProjects/Sample4/dynlst.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+dynvar.h
+C:/Users/Matheus/CLionProjects/Sample4/dynvar.h
+
+C:/Users/Matheus/CLionProjects/Sample4/dynvar.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+C:/Users/Matheus/CLionProjects/Sample4/main.c
+stdio.h
+-
+dynlst.h
+C:/Users/Matheus/CLionProjects/Sample4/dynlst.h
+

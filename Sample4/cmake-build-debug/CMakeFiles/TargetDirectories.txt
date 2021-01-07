@@ -1,0 +1,3 @@
+C:/Users/Matheus/CLionProjects/Sample4/cmake-build-debug/CMakeFiles/Sample4.dir
+C:/Users/Matheus/CLionProjects/Sample4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Matheus/CLionProjects/Sample4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

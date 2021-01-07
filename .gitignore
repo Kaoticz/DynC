@@ -52,8 +52,6 @@ Mkfile.old
 dkms.conf
 
 # Project Specifics
-test.c
-*save
-.bin/
-.obj/
-.doxygen/doxygen.log
+.*/.idea
+.*/cmake-build-debug/CMakeFiles/
+.*/cmake-build-debug/Testing/

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\DynLib.dir/objects.a
+C:\Users\Matheus\Documents\MinGW\bin\ar.exe cr CMakeFiles\DynLib.dir/objects.a @CMakeFiles\DynLib.dir\objects1.rsp
+C:\Users\Matheus\Documents\MinGW\bin\gcc.exe  -g  -shared -o libDynLib.dll -Wl,--out-implib,libDynLib.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\DynLib.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\DynLib.dir\linklibs.rsp

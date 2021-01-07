@@ -11,27 +11,4 @@ The data structures implemented here include:
 The `Samples*.c` files demonstrate a few of the functionalities of the library.
 
 Made on Windows 10, with GCC 9.2.0.
-Written on CodeBlocks. Documentation was supplied by Doxygen.
-  
-## How to compile
-- Compile the library (flags are optional):  
-```
-gcc -Wall -g -Winline -Wunreachable-code -Wmain -pedantic  -c dynarr.c -o dynarr.o
-```
-```
-gcc -Wall -g -Winline -Wunreachable-code -Wmain -pedantic  -c dynlst.c -o dynlst.o
-```
-```
-gcc -Wall -g -Winline -Wunreachable-code -Wmain -pedantic  -c dynvar.c -o dynvar.o
-```
-- Compile your program (flags are optional):
-```
-gcc -Wall -g -Winline -Wunreachable-code -Wmain -pedantic  -c main.c -o main.o
-```
-- Link everything together:
-```
-gcc -o main.exe dynarr.o dynlst.o dynvar.o main.o   
-```
-
-
-
+CLion projects. I'm saving this here for future reference.
