@@ -56,4 +56,4 @@ test.c
 *save
 .bin/
 .obj/
-.doxygen/doxygen.log
+.doxygen/
